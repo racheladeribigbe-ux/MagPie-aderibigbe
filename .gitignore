@@ -1,0 +1,18 @@
+# Compiled class files and the VS Code output folder
+*.class
+bin/
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Package files
+*.jar
+*.war
+
+# JVM crash logs
+hs_err_pid*
+
+.DS_Store
