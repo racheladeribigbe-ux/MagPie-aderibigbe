@@ -28,8 +28,7 @@ public class Magpie {
    * @return a greeting
    */
   public String getGreeting() {
-    // TODO Milestone 1: replace this with a greeting of your own.
-    return "PLACEHOLDER GREETING - change me first.";
+    return "Hello, What's up";
   }
 
   /**
@@ -60,12 +59,24 @@ public class Magpie {
    * @return a response based on the rules you write
    */
   public String getResponse(String statement) {
+    String response = ""; // Start a response
+    if(statement.equals("")|| statement.length ()== 0) {
+      response = "Please type something";
+
+    }
+    else if (statement.indexOf("dog")!= -1 || statement.indexOf("cat") != -1 
+        || statement.indexOf("fish") != -1) {
+        
+      response = "Tell me more about your pets.";
+    }
     // TODO Milestone 2: detect keywords with indexOf and respond to them.
     // TODO Milestone 2: handle the empty statement — the user just pressed Enter.
     // TODO Milestone 3: move your searches to findKeyword so whole words match.
     // TODO Milestone 4: answer several related words in one branch, with ||.
     // TODO: when nothing matches, fall through to getRandomResponse().
-    return "PLACEHOLDER RESPONSE - you said: " + statement;
+
+
+    return response;
   }
 
   /**
