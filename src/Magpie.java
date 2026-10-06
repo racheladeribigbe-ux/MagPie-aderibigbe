@@ -69,6 +69,8 @@ public class Magpie {
         
       response = "Tell me more about your pets.";
     }
+
+    else response = getRandomResponse();
     // TODO Milestone 2: detect keywords with indexOf and respond to them.
     // TODO Milestone 2: handle the empty statement — the user just pressed Enter.
     // TODO Milestone 3: move your searches to findKeyword so whole words match.
@@ -98,8 +100,12 @@ public class Magpie {
    * @return a non-committal string
    */
   private String getRandomResponse() {
-    // TODO: return one of several replies, chosen at random.
-    return "PLACEHOLDER DEFAULT.";
+    String[] options = {
+      "It's weird being a computer",
+      "Strange weather we're having here"
+
+
+    };
   }
 
   /**
